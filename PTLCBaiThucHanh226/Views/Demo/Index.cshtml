@@ -4,5 +4,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Lập Trình Quản Lý</h2>
+<h2>Tin Học Kinh Tế</h2>
+@using (Html.BeginForm())
+
+{
+    <label>Mã sinh viên</label>
+    <input type="text" name="Masinhvien" />
+    <label>Tên Sinh Viên</label>
+    <input type="text" name="HoTensinhvien" />
+    <input type="submit" value="Gửi dữ liệu đi" />
+}
 

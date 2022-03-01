@@ -12,26 +12,5 @@ namespace PTLCBaiThucHanh226.Controllers
         {
             return View();
         }
-        public ActionResult About()
-        {
-            ViewBag.Message = "";
-
-            return View();
-        }
-        [HttpPost]
-
-        public ActionResult About( string MaSinhVien)
-        {
-            ViewBag.ThongTin = "MaSinhVien";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
