@@ -12,10 +12,17 @@ namespace PTLCBaiThucHanh226.Controllers
         {
             return View();
         }
-
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "";
+
+            return View();
+        }
+        [HttpPost]
+
+        public ActionResult About( string MaSinhVien)
+        {
+            ViewBag.ThongTin = "MaSinhVien";
 
             return View();
         }
