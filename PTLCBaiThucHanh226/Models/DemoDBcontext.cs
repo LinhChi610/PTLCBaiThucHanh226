@@ -5,22 +5,22 @@ using System.Linq;
 
 namespace PTLCBaiThucHanh226.Models
 {
-    public partial class DemoDBcontext : DbContext
+    public partial class DemoDbContext : DbContext
     {
-        public DemoDBcontext()
-            : base("name=DemoDBcontext")
+        public DemoDbContext()
+            : base("name=DemoDbContext")
         {
         }
 
-        public virtual DbSet<DemoDB> DemoDBs { get; set; }
+        public virtual DbSet<Person> People { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<DemoDB>()
+            modelBuilder.Entity<Demo>()
                 .Property(e => e.StudentID)
                 .IsFixedLength();
 
-            modelBuilder.Entity<DemoDB>()
+            modelBuilder.Entity<Demo>()
                 .Property(e => e.StudentName)
                 .IsFixedLength();
         }

@@ -6,8 +6,8 @@ namespace PTLCBaiThucHanh226.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("DemoDB")]
-    public partial class DemoDB
+    [Table("Demo")]
+    public partial class Demo
     {
         [Key]
         [StringLength(10)]
